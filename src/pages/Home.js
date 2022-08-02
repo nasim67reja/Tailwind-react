@@ -1,11 +1,16 @@
-import React from "react";
+import Row from "../components/Row";
 import Main from "./Main";
+import requests from "../Request";
 
 const Home = () => {
   return (
-    <div className="text-white">
+    <>
       <Main />
-    </div>
+      <Row title="Up Coming" fetchURL={requests.requestUpComing} />
+      <Row title="Top Rated" fetchURL={requests.requestTopRated} />
+      <Row title="Trending" fetchURL={requests.requestTrending} />
+      <Row title="Up Coming" fetchURL={requests.requestUpComing} />
+    </>
   );
 };
 

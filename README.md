@@ -1,4 +1,4 @@
-# Protfolio
+# NetFlix Clone
 
 ## Table of contents
 
@@ -16,7 +16,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See all testimonials in a horizontal slider
 - Receive an error message when the newsletter sign up `form` is submitted if:
   - The `input` field is empty
   - The email address is not formatted correctly
@@ -32,20 +31,31 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Reactjs
+- Tailwind CSS
 - Flexbox
 - CSS Grid
 - JavaScript
 - Desktop-first workflow
 
+- The API I used in this project
+
+```JavaScript
+const requests = {
+  requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
+  requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`,
+  requestUpComing: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}&language=en-US&page=1`,
+};
+```
+
 ### What I learned
 
-By building this project I have learned how to create horzonlat scroll page layout
+- connecting with api by the help of fetch was awesome for me.But i still have some problem with fetch api I mean how to fetch data from server into my react application.I think I need to focus on this topic for my upcoming project.
+- This is also my first time with tailwind CSS. Tailwind css is awesome I like their utility class it's save a lot of time for building application.I also need to enhance my skills on Tailwind by building other projects
 
 ### Useful resources
 
-- [Example resource 1](https://github.com/jonasschmedtmann/complete-javascript-course/blob/master/13-Advanced-DOM-Bankist/final/script.js)
+- [The Movie DB Api](https://www.themoviedb.org/documentation/api)
 - [Example resource 2](https://css-tricks.com/pure-css-horizontal-scrolling/) -horizontal scrolling
 
 ## Author
